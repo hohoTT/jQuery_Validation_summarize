@@ -1,0 +1,3 @@
+# jQuery_Validation_summarize
+
+有关jQuery Validation的用法及其应用的总结
