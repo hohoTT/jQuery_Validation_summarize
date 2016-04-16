@@ -1,0 +1,11 @@
+demo01.jsp: jquery.fn.extend 插件技术,向jquery类和对象中定义相应的函数
+demo02.jsp: 自定义奇偶行变色表格,功能可以实现,但是每次需要传参数
+demo03.jsp: 采用缺省参数来优化自定义函数
+demo04.jsp: jquery validate 环境搭建
+demo05.jsp: jquery validate 常见验证规则_上
+demo06.jsp: jquery validate 常见验证规则_下
+demo07.jsp: jquery validate 实现远程验证
+demo08.jsp: jquery validate 自定义验证方法
+demo09.jsp: jquery validate 自定义验证消息
+demo10.jsp: 优化验证的错误消息
+demo11.jsp: 解决错误消息的bug问题
