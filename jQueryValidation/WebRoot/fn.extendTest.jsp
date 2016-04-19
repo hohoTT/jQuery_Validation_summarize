@@ -37,7 +37,8 @@
   </head>
   
   <body>
-    This Index page. <br>
+	
+	<h1>The Fn.extendTest Page</h1><hr/>
     
      <!-- 通过jquery的插件机制,向Jquery类库或者对象库增加新的函数 -->
      
