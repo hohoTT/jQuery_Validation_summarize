@@ -1,0 +1,46 @@
+一、 理解jquery的$.extend()、$.fn和$.fn.extend()
+	以下为详解
+	具体的实现可以参考页面  fn.extendTest.jsp
+	
+	1. jQuery.extend(object)
+
+		<1>. 为jQuery类添加类方法，可以理解为添加静态方法
+			举例如下：
+				jQuery.extend({
+					min: function(a, b) { return a < b ? a : b; },
+					max: function(a, b) { return a > b ? a : b; }
+				});
+				
+				jQuery.min(2,3); //  2 
+				jQuery.max(4,5); //  5
+		
+		<2>. Objectj Query.extend( target, object1, [objectN])
+			用一个或多个其他对象来扩展一个对象，返回被扩展的对象
+			var settings = { validate: false, limit: 5, name: "foo" }; 
+			var options = { validate: true, name: "bar" }; 
+			jQuery.extend(settings, options); 
+			结果：settings == { validate: true, limit: 5, name: "bar" }
+	
+	2. jQuery.fn.extend(object);
+	
+		对jQuery.prototype进得扩展，就是为jQuery类添加“成员函数”。
+		jQuery类的实例可以使用这个“成员函数”。
+		比如我们要开发一个插件，做一个特殊的编辑框，当它被点击时，便alert 当前编辑框里的内容。
+		
+		$.fn.extend({          
+		    alertWhileClick:function() {            
+		          $(this).click(function(){                 
+		                 alert($(this).val());           
+		           });           
+		     }       
+		});       
+		$("#input1").alertWhileClick(); 
+		
+		$("#input1")　为一个jQuery实例，当它调用成员方法 alertWhileClick后，
+		便实现了扩展，每次被点击时它会先弹出目前编辑里的内容。
+		
+		
+		
+		
+		
+		

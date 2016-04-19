@@ -17,7 +17,20 @@
     		}
     	});
     	
-    	alert($.max(12, 13));
+    	// 以下为以 alert的形式进行显示结果
+    	//alert($.max(12, 13));
+    	
+    	// 以下为在 console 控制台中打印显示
+    	console.info($.max(12, 13));
+    	
+    	$.fn.extend({
+    		// 如果有参数则设置参数
+    		min:function(x,y){
+    			return x < y ? x : y;
+    		}
+    	});
+    	
+    	console.info($("html").min(12, 13));
   		
   	</script>
   	
