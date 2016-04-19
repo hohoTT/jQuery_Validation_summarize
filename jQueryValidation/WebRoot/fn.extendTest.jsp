@@ -14,7 +14,12 @@
     		// 如果有参数则设置参数
     		max:function(x,y){
     			return x > y ? x : y;
-    		}
+    		},
+    		
+    		// 相同名称时使用，此时会替换掉之前的那个方法
+    		//max:function(){
+    		//	alert("hohoTT");
+    		//}
     	});
     	
     	// 以下为以 alert的形式进行显示结果
