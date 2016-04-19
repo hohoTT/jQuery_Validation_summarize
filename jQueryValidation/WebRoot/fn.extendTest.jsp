@@ -35,6 +35,13 @@
     		}
     	});
     	
+    	// 以下为 $.fn.extend 的另一种写法，实现起来是一样的效果
+    	//$.extend($.fn,{
+    	//	min:function(x,y){
+    	//		return x<y?x:y;
+    	//	}
+    	//});
+    	
     	console.info($("html").min(12, 13));
   		
   	</script>
