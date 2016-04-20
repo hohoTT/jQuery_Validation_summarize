@@ -10,10 +10,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>jquery validate 实现远程验证</title>
     
     <style type="text/css">
-		form input, select{
-			margin:5px 0px;
-			display: block;
+		form input,select{
+			margin:5px;
+			display:inline;
 		}
+		/*
+		form input[type="checkbox"]{
+			display: inline;
+		}*/
 	</style>
 	
 	<script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
@@ -27,6 +31,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			// 调用 jQuery 对象注册的函数，即 validate，此函数为主函数 
 			$("#ff").validate({
 				debug : false, // 定义debug模式,这样就不会提交, 默认的值为 false
+				
+				onkeyup : true,	// 如果验证失败则按键up验证设置为false,默认是true
 				
 				// jquery validate可以采用name来确定验证的dom对象
 				
@@ -45,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						// 仅仅只需要配置验证的url地址即可
 						remote : {
 							url : 'servlet/AjaxServlet',
-							// post请求IE中是不会又缓存问题
+							// post请求IE中是不会有缓存问题
 							type : 'post'
 						}
 					},
