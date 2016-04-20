@@ -103,7 +103,14 @@
 		  		
 		  	</script>
 	 
+四、 jQueryValidation 中的相关验证规则
 	
+	        部分的使用规则可见 jqueryValidateBuildUseRule.jsp 与 jqueryValidateBuildUseRule2.jsp
+	中的验证规则使用详情以及 参考 jquery.validate.js 中的源代码
+	
+五、 实现远程验证
+	
+	参考的代码 可见  remoteValidate.jsp 
 
 	
 		
