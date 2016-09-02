@@ -2,6 +2,7 @@
 
 有关jQuery Validation的用法及其应用的总结
 
+
 ### 一、 理解jquery的$.extend()、$.fn和$.fn.extend()
   	以下为详解
   	具体的实现可以参考页面  fn.extendTest.jsp
